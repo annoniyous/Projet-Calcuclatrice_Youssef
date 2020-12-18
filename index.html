@@ -1,25 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calculatrice</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-
-
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="./node_modules/admin-lte/dist/css/AdminLTE.css">
-  <link rel="stylesheet" href="public/css/style.css">
+  <title>Calculatrice Youssef</title>
+  <link rel="stylesheet" href="./public/css/style.css">
 </head>
-
 <body>
-
- 
-
-  <script src="public/js/main.js" type="module"></script>
+<div id="output"></div>
+<div id ="monContainer">
+  <!-- gros container pour mettre tout mes inputs -->
+  <div id="container">
+    <!-- Tout mes bouton + Add Event click -->
+      <div><input type="button" value='AC' onclick='Reset(this)'/></div>
+      <div><input type="button" value='/' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='-' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='*' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='+' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='9' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='8' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='7' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='6' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='5' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='4' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='3' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='2' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='1' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='0' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='.' onclick='ShowValue(this)'/></div>
+      <div><input type="button" value='=' onclick='quickMath(this)'/></div>
+  </div>
+</div>
+    <script src="public/js/main.js"></script>
 </body>
-
 </html>
